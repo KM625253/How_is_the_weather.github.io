@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How the Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" type="image/png" href="Rainy_Weather_32px.png" sizes="32x32">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+       <header>Red Johne</header>
+       <ul>
+        <li>
+            <a class="snow" data-video="./Video/Snow.mp4">
+                <canvas id="icon5"  width="90" height="90"></canvas>
+          </a>
+         </li> 
+         
+           <li>
+            <a class="thdr" data-sound="./Audio/Thunder.mp3" data-video="./Video/thunder.mp4">
+                <canvas id="icon3"  width="90" height="90"></canvas>
+              </a>
+        </li>
+         <li>
+            <a class="cldn" data-video="./Video/party-cloud-night.mp4">
+                <canvas id="icon2" width="90" height="90"></canvas>
+           </a>
+         </li>
+         <li>
+            <a class="rn" data-sound="./Audio/Rain.mp3" data-video="./Video/rain.mp4">
+                <canvas id="icon4"  width="90" height="90"></canvas>
+             </a>
+           </li>
+           
+          
+       </ul>
+    </nav>
+    <div class="app">
+        <div class="vid-container">
+            <video loop >
+           <source src="./Video/Cloudy.mp4"  type="video/mp4">
+            </video>
+        </div>
+        <audio class="song" loop>
+            <source src="./Audio/Rain.mp3" />
+        </audio>
+        <div class="glass">
+            <div class="location">
+                <h1 class="location-timezone">Time Zone</h1>
+                <canvas id="iconM" class="icon1" width="128" height="128"></canvas>
+            </div>
+            <div class="temperature">
+                <div class="degree-section">
+                    <h2 class="temperature-degree">- -</h2>
+                    <span>C</span>
+                </div>
+                <div class="temperature-description">No Connexion !!!
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="skycons.js"></script>
+    
+</body>
+</html>
